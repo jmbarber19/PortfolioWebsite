@@ -7,7 +7,7 @@
   height: 40vmin;
 }
 
-.App-header {
+.Appheader {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -18,7 +18,7 @@
   color: white;
 }
 
-.App-link {
+.Applink {
   color: #61dafb;
 }
 

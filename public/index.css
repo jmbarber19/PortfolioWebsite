@@ -1,0 +1,277 @@
+/*
+  lb #60564A
+  Cool Stuff RS
+*/
+
+html {
+  --FontColorWhite: #ffffff;
+  --FontColorGrey: #b3c9ba;
+  --FontColorLightGreen: #adff9d;
+  --FontColorDarkGreen: #80f169;
+  
+
+  --BackgroundGreen: #58795a;
+  --BackgroundReadable: #464241;
+  --BackgroundDark: #2b2b27;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid var(--BackgroundGreen);
+  margin: 1em 0;
+  padding: 0; 
+}
+
+b {
+  color: var(--FontColorLightGreen);
+}
+
+ul {
+  margin: 0;
+}
+
+.whiteBold {
+  color: var(--FontColorWhite);
+}
+
+body {
+  color: var(--FontColorWhite);
+  background-color: var(--BackgroundDark);
+  font-family: 'Khula', sans-serif;
+}
+
+h1 {
+  padding: 0px;
+  margin: 0px;
+  font-size: 1.6em;
+  color: var(--FontColorLightGreen);
+}
+
+h2 {
+  margin: 0;
+}
+
+/* TITLE */
+
+.titleWrapper {
+  display: inline-block;
+  margin-left: 0.5em;
+  margin-right: 0.25em;
+  margin-top: 0.5em;
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 750px) {
+  .titleWrapper {
+    display: block;
+  }
+}
+
+.mainTitle {
+  font-style: italic;
+  font-size: 1.8em;
+  display: inline-block;
+}
+
+.titleSubTextHolder {
+  margin-top: -1.0em;
+  margin-left: 0.4em;
+}
+
+.titleSubText {
+  font-style: italic;
+  color: var(--FontColorWhite);
+  font-style: italic;
+  font-size: 0.85em;
+  padding-right: 0.1em;
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+a {
+  font-weight: bold;
+  display: inline;
+  text-align: center;
+  text-decoration: none;
+  
+  color: var(--FontColorDarkGreen);
+  background-color: rgba(0,0,0,0);
+
+  padding-left: 0.2em;
+  padding-right: 0.2em;
+
+  -webkit-transition: background-color 0.2s, color 0.1s;
+  transition: background-color 0.2s, color 0.1s;
+}
+
+a:hover {
+  color: var(--BackgroundReadable);
+  background-color: var(--FontColorLightGreen);
+}
+
+.galleryImageHolder {
+  max-width: 600px;
+}
+
+.imageHolder {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.imageHolder img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* NAV BAR */
+
+nav {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+nav a {
+  font-size: 1.1em;
+  width: auto;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin: 0;
+  padding-top: 0.25em;
+  text-align: center;
+  display: inline-block;
+  font-weight: 700;
+  border-right: 1px var(--BackgroundGreen) solid;
+  text-decoration: none;
+
+  color: var(--FontColorDarkGreen);
+  background-color: rgba(0,0,0,0);
+
+  -webkit-transition: background-color 0.25s, color 0.1s;
+  transition: background-color 0.25s, color 0.1s;
+}
+
+nav a:hover {
+  color: var(--BackgroundReadable);
+  background-color: var(--FontColorLightGreen);
+}
+
+@media only screen and (max-width: 900px) {
+  nav a {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  nav a {
+    font-size: 1.1em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  nav a {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  nav a {
+    font-size: auto;
+  }
+}
+
+nav a:last-child {
+  border-right: 0px black solid;
+}
+
+
+/* BODY MAIN */
+
+.block {
+  padding: 10px;
+}
+
+/* /////////////// */
+
+.main.block {
+  background-color: var(--BackgroundReadable);
+  width: 50%;
+  min-width: 600px;
+  margin: 0 auto;
+  box-shadow: 4px 4px var(--BackgroundGreen);
+}
+
+article {
+  margin-left: 2em;
+  margin-right: 2em;
+  margin-bottom: 4em;
+}
+
+.game {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+textarea {
+  width:100%;
+  max-width: 40em;
+  border:0
+}
+
+@media only screen and (max-width: 900px) {
+  .main.block {
+    background-color: var(--BackgroundReadable);
+    width: 80%;
+    min-width: 500px;
+  }
+
+  article {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 3em;
+  }
+
+  .game {
+    margin-left: 0.5em;
+    margin-right: 0.25em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .main.block {
+    background-color: var(--BackgroundReadable);
+    width: auto;
+    min-width: auto;
+    margin: 0;
+  }
+
+  article {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-bottom: 2em;
+  }
+
+  .game {
+    margin-left: 0.25em;
+    margin-right: 0em;
+  }
+}
+
+
+.subtitle {
+  font-size: 12pt;
+  margin-left: 0.1em;
+  margin-right: 0.1em; 
+  display: inline-block;
+  color: var(--FontColorLightGreen);
+}
+
+video {
+  width: 100%    !important;
+  height: auto   !important;
+  max-height: 240px;
+}
